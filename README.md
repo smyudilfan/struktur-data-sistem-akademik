@@ -1,31 +1,55 @@
-# Program Sistem Akademik Sederhana
+# Tugas Mandiri 1b - Penerapan Struktur Data Linear
 
-Program ini dibuat untuk memenuhi tugas Struktur Data.
+**Nama:** SM. YUDILFAN INRAWINATA  
+**NIM:** 12450111492  
+**Program Studi:** Teknik Informatika  
+**Universitas:** UIN Sultan Syarif Kasim Riau
 
-## Studi Kasus
+## Deskripsi
+Program ini merupakan penerapan struktur data linear menggunakan Python.
 
-Program digunakan untuk mengelola data mahasiswa sederhana.
+Struktur data yang digunakan:
+- **Queue** untuk antrean pelayanan mahasiswa dengan konsep FIFO (First In First Out).
+- **Stack** untuk fitur Undo dengan konsep LIFO (Last In First Out).
 
-## Struktur Data yang Digunakan
+## Fitur Queue
+1. Penambahan data (Enqueue)
+2. Penghapusan data (Dequeue)
+3. Melihat data terdepan (Peek)
+4. Memeriksa kondisi kosong (IsEmpty)
 
-1. List untuk menyimpan data mahasiswa.
-2. Stack untuk fitur Undo.
-3. Queue untuk antrean mahasiswa.
+## Fitur Undo
+1. Penambahan data (Push)
+2. Penghapusan data (Pop)
+3. Melihat aktivitas terakhir (Peek)
+4. Memeriksa kondisi kosong (IsEmpty)
 
-## Fitur Program
-
-- Menampilkan data mahasiswa
-- Menambah data mahasiswa
-- Menghapus data mahasiswa
-- Mencari mahasiswa berdasarkan NIM
-- Undo data terakhir
-- Menambahkan mahasiswa ke antrean
-- Memproses antrean mahasiswa
+## File
+- `tugas_1b.py` - Program utama Queue dan Undo
+- `test_antrean.py` - Unit Testing Queue
+- `test_undo.py` - Unit Testing Undo
 
 ## Cara Menjalankan
 
-Program dibuat menggunakan Python.
+Jalankan program utama:
 
-Jalankan dengan perintah:
+```bash
+python tugas_1b.py
+```
 
-python program.py
+Unit Testing Queue:
+
+```bash
+python -m unittest test_antrean.py
+```
+
+Unit Testing Undo:
+
+```bash
+python -m unittest test_undo.py
+```
+
+## Kompleksitas
+Operasi Queue menggunakan `deque` memiliki kompleksitas utama O(1).
+
+Operasi Stack menggunakan `list` memiliki kompleksitas utama O(1) untuk append, pop, akses elemen terakhir, dan pengecekan kosong.
